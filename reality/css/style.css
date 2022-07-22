@@ -225,6 +225,12 @@ nav img {
   height: 100vh;
 }
 
+@media screen and (max-width: 300px) {
+  .inicio {
+    height: 0;
+  }
+}
+
 .wrap {
   display: flex;
   align-items: center;
