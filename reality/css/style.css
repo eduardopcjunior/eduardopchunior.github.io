@@ -221,10 +221,6 @@ nav img {
 
 /* CARROSSEL */
 
-.inicio {
-  height: 100vh;
-}
-
 .wrap {
   display: flex;
   align-items: center;
