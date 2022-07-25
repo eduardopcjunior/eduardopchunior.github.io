@@ -349,11 +349,11 @@ nav img {
   text-align: justify;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container h1 {
   color: goldenrod;
-  text-align: center;
 }
 
 article {
