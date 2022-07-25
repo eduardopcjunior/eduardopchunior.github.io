@@ -150,11 +150,11 @@ nav img {
   }
 
   .navbar ul li a {
-    padding: 0;
+    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .navbar .navbar-toggler {
