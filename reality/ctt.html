@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Reality</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <body style="background-image: url('imagens/fundo-vazio2.jpg');">
+
+        <header>
+          <nav style="position: relative;" class="navbar">
+            <a href="index.html"><img src="imagens/logo-reality.png" alt="Logo da empresa Reality"></a>
+            <!--     <a href="#" class="navbar-brand"><img src="https://www.dropbox.com/s/zzwcz0xpj95sy7p/logo%20%2810%29.png?raw=1" style="width: 50px; vertical-align: middle;"></a> -->
+            <ul>
+              <li><a href="proj.html">Quem somos</a></li>
+              <li><a href="info.html">História</a></li>
+              <li><a href="index.html">Vídeo</a></li>
+              <li><a href="proj.html">Audio</a></li>
+              <li><a href="aud.html">informática</a></li>
+              <li><a href="vid.html">Iluminações</a></li>
+              <li><a href="ilu.html">Estruturas</a></li>
+              <li><a href="ger.html">Acessórios</a></li>
+              <li><a href="ctt.html">Contato</a></li>
+            </ul>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </header>
+
+    <main>     
+        
+        <article class="container">
+           
+            <h2>Contato</h2>
+            <!-- form: get para conteúdo como termos de busca/ form: post para coleta de dados (segurança dos dados) -->
+            <form id="my-form" action="https://formspree.io/f/mzbojwnv" method="post">
+            <div>
+                <label for="nome">Nome:</label> <!-- for = é muito importante ser preenchido por questões de acessibilidade e deve ter a mesmo descrição do ID -->
+                <input placeholder="nome" type="text" name="nome" id="nome" required>   <!-- placeholder é usado para descrever o campo para o usuário (opcional) -->
+
+                <!-- para campos obrigatórios colocar "required" dentro das tags input ou select -->
+            </div> 
+            <div>
+                <label for="email">E-mail:</label> 
+                <input type="email" name="email" id="email">     
+            </div>      
+            <div>
+                <label for="data">Nascimento:</label> 
+                <input type="date" name="data" id="data">     
+            </div>  
+            <div>
+                <label for="celular">Celular:</label> 
+                <input type="tel" name="celular" id="celular">     
+            </div>
+            <div>
+                <label for="telefone">Telefone fixo:</label> 
+                <input type="tel" name="telefone" id="telefone">     
+            </div>  
+            <div>
+                <label for="idade">Idade:</label> 
+                <input type="number" name="idade" id="idade" min="18" max="120"> 
+            
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" maxlength="9" required>
+                <button id="localizar-cep">Localizar</button>
+                <b id="status"></b>
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" size="30">
+            </div>
+            <div>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+            </div>
+            
+            <div>
+                <label for="assunto">Assunto</label>
+                <select name="" id="">
+                    <option></option> <!-- deixar vazio propositalmente -->
+                    <option>Dúvidas</option>
+                    <option>Elogio</option>
+                    <option>Reclamação</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="mensagem">Mensagem:
+                </label> <br>
+                <textarea name="mensagem" id="mensagem" cols="25" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <!-- também poderia usar:
+            <input type="button" value="Enviar"> -->
+
+            <p id="my-form-status"></p>
+
+            
+        </form>
+        </article>
+        
+    </main>
+
+    <hr>
+  <footer>
+
+    <div class="roda">
+      <div class="foot">
+        <h3>Mapa do site</h3>
+        <ul>
+          <li><a href="proj.html">Quem somos</a></li>
+          <li><a href="info.html">História</a></li>
+          <li><a href="index.html">Vídeo</a></li>
+          <li><a href="proj.html">Audio</a></li>
+          <li><a href="aud.html">Informática</a></li>
+          <li><a href="vid.html">Iluminação</a></li>
+          <li><a href="ilu.html">Estruturas</a></li>
+          <li><a href="ger.html">Acessórios</a></li>
+          <li><a href="ctt.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="redes ctt">
+        <a href=""><img src="imagens/redes/insta.png" alt="Logo do Instagram"></a>
+        <a href="https://api.whatsapp.com/send?phone=5511943116002" target="_blank"><img
+            src="imagens/redes/whatsapp.png" alt="Logo do Whatsapp"></a>
+
+        <ul>
+          <li><img src="imagens/redes/email.png" alt="Ícone de e-mail"> locacao@reality.com.br</li>
+          <li><img src="imagens/redes/telefone.png" alt="Ícone de telefone">(11) 5894-6000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cop">
+      &copy;Copyright Reality Projeções. Todos os direitos reservados.
+    </div>
+  </footer>
+
+    <script src="js/vanilla-masker.min.js"></script>
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/scripts.js"></script>
+    
+
+</body>
+</html>
