@@ -373,8 +373,8 @@ figure img {
 /* CONTATO */
 
 form {
-  background-color: rgb(228, 226, 221);
-  color: black;
+  background: rgba(218, 165, 32, 0.171);
+  color: white;
   width: 800px;
   margin: auto;
   padding: 1rem;

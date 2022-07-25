@@ -20,7 +20,6 @@
                 <a href="index.html"><img src="imagens/logo-reality.png" alt="Logo da empresa Reality"></a>
                 <!--     <a href="#" class="navbar-brand"><img src="https://www.dropbox.com/s/zzwcz0xpj95sy7p/logo%20%2810%29.png?raw=1" style="width: 50px; vertical-align: middle;"></a> -->
                 <ul>
-                    <li><a href="proj.html">Quem somos</a></li>
                     <li><a href="info.html">História</a></li>
                     <li><a href="index.html">Vídeo</a></li>
                     <li><a href="proj.html">Audio</a></li>
@@ -42,11 +41,11 @@
 
                 <h2>Contato</h2>
                 <!-- form: get para conteúdo como termos de busca/ form: post para coleta de dados (segurança dos dados) -->
-                <form id="my-form" action="https://formspree.io/f/mzbojwnv" method="post">
+                <form id="my-form" action="https://formspree.io/f/{form_id}" method="post" method="post">
                     <div>
                         <label for="nome">Nome:</label>
                         <!-- for = é muito importante ser preenchido por questões de acessibilidade e deve ter a mesmo descrição do ID -->
-                        <input placeholder="nome" type="text" name="nome" id="nome" required>
+                        <input placeholder="" type="text" name="nome" id="nome" required>
                         <!-- placeholder é usado para descrever o campo para o usuário (opcional) -->
 
                         <!-- para campos obrigatórios colocar "required" dentro das tags input ou select -->
@@ -56,20 +55,20 @@
                         <input type="email" name="email" id="email">
                     </div>
                     <div>
-                        <label for="data">Empresa:</label>
-                        <input type="text" name="text" id="text">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" name="empresa" id="empresa">
                     </div>
                     <div>
                         <label for="celular">Celular:</label>
-                        <input type="tel" name="celular" id="celular">
+                        <input type="number" name="celular" id="celular" maxlength="11">
                     </div>
                     <div>
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" name="telefone" id="telefone">
+                        <input type="tel" name="telefone" id="telefone" maxlength="11">
                     </div>
                     <div>
                         <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" maxlength="9" required>
+                        <input type="number" id="cep" name="cep" maxlength="9" required>
                         <button id="localizar-cep">Localizar</button>
                         <b id="status"></b>
                     </div>
@@ -105,6 +104,7 @@
                             <option>Dúvida</option>
                             <option>Orçamento</option>
                             <option>Reclamação</option>
+                            <option>Elogios</option>
                             <option>Outros</option>
                         </select>
                     </div>
