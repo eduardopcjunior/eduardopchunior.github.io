@@ -376,6 +376,13 @@ figure img {
   width: 300px;
 }
 
+.localizacao {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
 /* =============================== */
 
 /* CONTATO */
