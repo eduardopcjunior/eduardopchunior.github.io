@@ -34,25 +34,38 @@ a {
 /* MENU */
 
 header {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   z-index: 2000;
   width: 100%;
   position: fixed;
-  background-color: #000;
-}
-
-.logo {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.753);
 }
 
 .logo img {
   width: 150px;
 }
 
+.redes-header {
+  display: flex;
+}
+
+.rd {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rd img {
+  width: 35px;
+  opacity: 0.5;
+}
+
 .cd-dropdown-wrapper {
-  margin-top: 20px;
-  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
   font-family: revel;
   font-size: 1.5rem;
 }
@@ -61,7 +74,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   position: relative;
   background-color: rgb(172, 123, 0);
   color: black;
@@ -78,6 +90,47 @@ header {
   font-size: 2rem;
   text-align: center;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+.effect-one > a {
+	position: relative;
+	&:hover:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		margin: -5px 0;
+		background-color: white;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.4s ease-in-out 0s;
+	}
+	:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+}
+  
+
+
+
+
+
+
+
+
+
+
+.has-children a:hover {
+  text-decoration: underline solid;
+  width: 1s;
 }
 
 
@@ -102,6 +155,7 @@ header {
 }
 
 .cd-dropdown {
+  font-size: 2rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -252,6 +306,7 @@ header {
   .cd-dropdown-content .cd-dropdown-gallery.is-hidden,
   .cd-dropdown-content .cd-dropdown-icons.is-hidden {
     transform: translateX(0);
+    height: 50rem;
   }
 
   .cd-dropdown-content .cd-secondary-dropdown.fade-in,
@@ -344,15 +399,40 @@ header {
     color: black;
   }
 
+
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background: white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66);
+    border-radius: 10px;
+  }
+
+
+
   .cd-dropdown-content .cd-secondary-dropdown ul {
     padding-bottom: 25px;
-    overflow: hidden;
-    height: auto;
+    height: relative;
   }
 
   .cd-dropdown-content .cd-secondary-dropdown .go-back a {
-    padding-left: 20px;
     color: black;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
   }
 
 
@@ -377,6 +457,10 @@ header {
 
   .cd-dropdown-content>.has-children>a.is-active {
     color: black;
+  }
+
+  .cd-dropdown-content>.see-all>a {
+    font-size: 10rem;
   }
 
 }
@@ -660,7 +744,6 @@ form {
 input:not([type=radio]):not([type=checkbox]),
 select,
 textarea {
-  /* criando excessões no CSS: usando pseudo classes ":not([type=xxx]) estamos pegando tudo o que envolve input, exceto radio e checkbox ;)*/
   padding: 1%;
   width: 100%;
   height: 40px;
@@ -690,79 +773,21 @@ form div {
 
 /* RODAPÉ */
 
-footer {
-  max-width: 900px;
-  margin: auto;
-}
-
-.roda {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 15px;
-}
-
-
-
-.foot {
-  box-shadow: 1px 0 0 rgba(218, 165, 32, 0.555);
-}
-
-@media screen and (max-width: 700px) {
-  .foot {
-    box-shadow: none;
-  }
-}
-
-
-.foot h3 {
-  color: rgba(218, 165, 32, 0.356);
-  padding-top: 15px;
-  padding-left: 15px;
-}
-
-.foot li {
-  padding-top: 10px;
-}
-
-.foot ul {
-  column-count: 2;
-  padding: 15px;
-}
-
-.foot a {
-  text-decoration: none;
-  color: #daa5205b;
-}
-
-.foot a:hover {
-  color: rgba(218, 165, 32, 0.555);
-}
-
 .redes {
-  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
-.redes a {
-  padding: 10px;
+.redes a,
+ul {
+  padding: 15px;
 }
 
 .redes img {
-  width: 35px;
-  opacity: 0.30;
-}
+  width: 40px;
 
-.ctt {
-  color: #daa5205b;
-  font-size: 1.2rem;
-}
-
-.ctt li {
-  list-style: none;
-  padding: 10px;
 }
 
 .cop {
