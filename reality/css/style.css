@@ -58,6 +58,7 @@ header {
   padding: 20px;
   z-index: 2000;
   width: 100%;
+  height: ;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.753);
 }
@@ -113,8 +114,8 @@ header {
 }
 
 .has-children a:hover {
-  text-decoration: underline solid;
-  width: 1s;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 
@@ -383,7 +384,6 @@ header {
 
   .cd-dropdown-content .cd-secondary-dropdown .go-back a {
     color: black;
-    background-color: rgba(0, 0, 0, 0.493);
     border-radius: 5px;
     text-align: center;
     font-size: 2rem;
@@ -406,6 +406,11 @@ header {
 
   .cd-dropdown-content>.has-children>.cd-secondary-dropdown.is-active>li>ul {
     visibility: visible;
+  }
+
+  .cd-dropdown-content>.has-children>.cd-secondary-dropdown.is-active>li>ul>a:hover {
+    visibility: visible;
+    font-size: 2.5rem;
   }
 
   .cd-dropdown-content>.has-children>a.is-active {
