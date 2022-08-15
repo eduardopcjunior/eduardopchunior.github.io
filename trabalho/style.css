@@ -1,0 +1,160 @@
+*, *::after, ::before {box-sizing: border-box;}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {font-size: 15px;}
+
+body {
+    width: 100%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url(img/img-home/fundo-principal.jpg);
+    background-attachment:fixed;
+}
+
+img {width: 100%;}
+
+/* Menu */
+
+header {
+    width: 100%;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h1 img {
+    width: 80px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+ul a:hover {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border-radius: 5px;
+}
+
+header .limitador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+link {list-style: none;}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+}
+
+p {text-align: justify;}
+
+.mapa img{
+   
+    max-width: 400px;
+    margin: auto;
+    border: none;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {text-align: justify}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 5px;
+}
+
+article {
+    padding: 15px;
+}
+
+figure { 
+    text-align: center;
+    padding: 10px;
+
+}
+
+figure img {
+    border: solid;
+    max-width: 600px;
+    filter: grayscale(100%);
+	transition: all 0.3s;
+    border: solid blue 3px;
+}
+
+figure img:hover {
+	filter: grayscale(0);
+
+}
+
+li {
+    list-style: circle;
+    padding: 5px;
+}
+
+#album {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.zoom img {
+	width: 400px;
+    border: solid blue 3px;
+    filter: grayscale(100%);
+	transition: 0.5s;
+}
+
+.zoom:hover {
+	filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 60px;
+}
+
+
