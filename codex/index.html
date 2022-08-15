@@ -1,0 +1,123 @@
+<!-- Projeto criado por um iniciante em desenvolvimento -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cod'ex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="principal">
+        <header class="limitador">
+            <a href="index.html"><img id="logo" src="img/logocodex.png" alt="Logotipo da Code'ex"></a>
+
+            <nav>
+
+                <ul class="links-menu">
+                    <li><a href="#galeria">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div id="titulo">
+            <h1>Eduardo Castro</h1>
+            <p>Desenvolvedor Front-End</p>
+        </div>
+    </div>
+
+    <main>
+        <div id="galeria">
+            <h2>Portfólio</h2>
+            <div class="slider">
+
+                <figcaption>
+                    <a href="https://imperiofs.netlify.app/" target="_blank">Império</a>
+                </figcaption>
+
+                <figure id="imp">
+                    <img src="img/galeria-portfolio/pg-imperio01.png" width="350" />
+
+                    <img src="img/galeria-portfolio/pg-imperio02.png" width="350" />
+                </figure>
+
+                <figcaption>
+                    <a href="https://simplicityy.netlify.app/" target="_blank">Simplicity</a>
+                </figcaption>
+
+                <figure id="sim">
+                    <img src="img/galeria-portfolio/pg-simpli01.png" width="350" />
+
+                    <img src="img/galeria-portfolio/pg-simpli02.png" width="350" />
+
+                    <img src="img/galeria-portfolio/pg-simpli03.png" width="350" />
+                </figure>
+
+                <figcaption>
+                    <a href="https://sptrab.netlify.app/index.html" target="_blank">Trab SP</a>
+                </figcaption>
+
+                <figure id="trab">
+                    <img src="img/galeria-portfolio/pg-trab02.png.jpg" width="350" />
+
+                    <img src="img/galeria-portfolio/pg-trab01.png.jpg" width="350" />
+
+                    <img src="img/galeria-portfolio/pg-cord03.png.jpg" width="350" />
+                </figure>
+            </div>
+        </div>
+        <h2 id="contato">Contato</h2>
+        <section id="ctt">
+            <form id="my-form" action="https://formspree.io/f/mgednqgp" method="post">
+                <div class="nome">
+                    <p>Nome:</p><input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="email">
+                    <p>E-mail:</p> <input type="email" name="nome" id="email" required>
+                </div>
+
+                <div class="telefone">
+                    <p>Telefone:</p> <input type="tel" name="telefone" id="telefone" required>
+                </div>
+                    <p>Mensagem:</p>
+                <div class="mensagem">
+                    <textarea name="mensagem" id="mensagem" cols="47" rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                    <p id="my-form-status"></p>
+                </div>
+            </form>
+
+            <div id="ft">
+                <img src="img/ft-eduardo.jpg" alt="">
+            </div>
+
+            <ul class="rede">
+                <li class="rede"><a href="https://www.facebook.com/eduardopereira.junior.9" target="_blank"><img
+                            src="img/logo-face.png" alt="Logo com link para o perfil do Facebook" width="30"></a></li>
+                <li class="rede"><a href="https://www.instagram.com/_eduardocastro/" target="_blank"><img
+                            src="img/logo-insta.png" alt="Logo com link para o perfil do Instagram" width="30"></a></li>
+                <li class="rede"><a href="https://twitter.com/Eduardo_CJR" target="_blank"><img
+                            src="img/logo-twitter.png" alt="Logo com link para o perfil do Twitter" width="35"></a></li>
+            </ul>
+        </section>
+        <div id="set">
+            <a href="#principal"><img src="img/set-home.png" alt="" width="60"></a>
+        </div>
+    </main>
+
+    <footer>
+        Cod'ex | 2022&copy;
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

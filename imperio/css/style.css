@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {font-size: 16px;}
+
+body {
+    background-image: url("../img/home/fundo-principal.jpg");
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+
+    /* Fixar o rodapé */
+    /* 1) Etapa */
+    display: flex; /* body em modo flex */
+    flex-direction: column; /* definir altura */
+    min-height: 100vh; /* vh como referência */
+}
+
+
+/* Aqui começa o estilo do header */
+header {
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    /* Manter o header estático */
+    position: sticky;
+    /* Cordenadas/onde ficará estático */
+    top: 0;
+    z-index: 1;
+}
+
+.limitador {
+    max-width: 1000px;
+    margin: auto;
+}
+
+main {flex: 1;}
+
+.menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img {
+    margin: 10px;
+}
+
+.redes {
+    width: 80px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase
+}
+
+.link a {
+    text-decoration: none;
+    color: goldenrod;
+    padding: 8px;
+    font-size: 18px;
+    transition: 0.9s;
+}
+
+.link a:hover {
+    background-color: goldenrod;
+    color: black;
+    border-radius: 8px;
+}
+/* Aqui termina o estilo do header */
+
+
+
+/* Aqui começa o estilo da pag. home */
+h1 {
+    color: goldenrod;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.hino p {
+    font-size: 30px;
+    color: goldenrod;
+    text-shadow: 0.5px 1px 1px rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 60px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+/* Aqui termina o estilo da pag. home */
+
+
+
+/* Aqui começa o estilo da pag. galeria */
+.carrossel {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 25%;
+}
+
+.carrossel .carousel__item,
+.carrossel .carousel__item {
+	display: none;
+}
+
+.carrossel .carousel__item img {
+    width: 500px;
+    margin: auto;
+    border: 3px solid goldenrod;
+}
+
+.carrossel .carousel__item--visible {
+	display: block;
+}
+
+.carrossel .carousel__actions {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.seta {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.set {
+	cursor: pointer;
+}
+/* Aqui termina o estilo da pag. galeria */
+
+
+
+/* Aqui começa o estilo da pag. ctt */
+form {
+    color: goldenrod;
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+    font-size: 25px;
+}
+
+form div {
+    margin: 15px;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    float: right;
+    border-radius: 8px;
+}
+
+section {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: goldenrod;
+    color: black;
+}
+
+button:hover {
+    background-color: black;
+    color: goldenrod;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Aqui termina o estilo da pag. ctt */
+
+
+/* Estilo footer */
+footer {
+    background-color: black;
+    color: white;
+    font-family: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+
+@media screen and (min-width: 800px){
+        html { font-size: 20px;}
+        .link a {font-size: 1.2rem;}
+        .redes {width: 150px;}
+        .hino p {font-size: 2rem;}
+        .carrossel {margin-top: 0;}
+        .carrossel .carousel__item img {width: 700px;}
+}
+
+@media screen and (min-width: 600px){
+        .carrossel {margin-top: 0;}
+}
+
+
+@keyframes aparecer {  
+    /* dê */
+    from { 
+        transform: translateY(-100vh);
+        opacity: 0; 
+    }    
+    
+    /* para */
+    to { 
+        transform: translateY(0);
+        opacity: 1; 
+    }     
+}
